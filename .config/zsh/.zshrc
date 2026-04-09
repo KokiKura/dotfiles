@@ -79,6 +79,44 @@ you-should-use
 
 source $ZSH/oh-my-zsh.sh
 
+# Spaceship 全部盛り設定
+SPACESHIP_PROMPT_ORDER=(
+  user          # ユーザー名
+  dir           # ディレクトリ
+  git           # Git
+  package       # パッケージバージョン
+  node          # Node.js
+  ruby          # Ruby
+  python        # Python
+  golang        # Go
+  rust          # Rust
+  php           # PHP
+  docker        # Docker
+  aws           # AWS
+  kubectl       # Kubernetes
+  terraform     # Terraform
+  exec_time     # 実行時間
+  jobs          # バックグラウンドジョブ
+  exit_code     # 終了コード
+  line_sep      # 改行
+  char          # プロンプト文字
+)
+
+# コマンド間の区切り線
+precmd() { print -rP "%F{240}${(l:$COLUMNS::·:):-}%f" }
+
+SPACESHIP_USER_COLOR="yellow"
+SPACESHIP_USER_PREFIX="💻 "
+SPACESHIP_USER_SUFFIX=" "
+SPACESHIP_DIR_COLOR="cyan"
+SPACESHIP_DIR_PREFIX="📁 "
+SPACESHIP_USER_SHOW=always
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_CHAR_SYMBOL="❯ "
+SPACESHIP_CHAR_SYMBOL_SUCCESS="❯ "
+SPACESHIP_CHAR_SYMBOL_FAILURE="❯ "
+SPACESHIP_EXEC_TIME_SHOW=true
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
