@@ -1,0 +1,20 @@
+theme = Retro Legends
+
+background-opacity = 0.70
+background-blur-radius = 15
+
+font-family = Monaco
+font-size = 16
+
+mouse-hide-while-typing = true
+
+window-decoration = true
+
+cursor-style-blink = false
+
+keybind = cmd+t=new_window
+keybind = cmd+n=new_tab
+keybind = cmd+j=goto_window:next
+keybind = cmd+k=goto_window:previous
+
+desktop-notifications = true
