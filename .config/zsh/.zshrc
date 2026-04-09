@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,17 +78,6 @@ you-should-use
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# af-magic: right promptからuser@hostを除去
-RPS1=""
-
-# af-magic: ディレクトリ名をより青く (032=青緑 → 039=明るい青)
-PS1="${FG[237]}\${(l.\$(afmagic_dashes)..-.)}%{$reset_color%}
-%{$fg[cyan]%}%~\$(git_prompt_info)\$(hg_prompt_info) ${FG[105]}%(!.#.»)%{$reset_color%} "
-
-# af-magic: ブランチ名を赤く
-ZSH_THEME_GIT_PROMPT_PREFIX=" ${FG[075]}(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="${FG[075]})%{$reset_color%}"
 
 # User configuration
 
