@@ -3,7 +3,7 @@ theme = Retro Legends
 background-opacity = 0.70
 background-blur-radius = 15
 
-font-family = Monaco
+font-family = MesloLGS Nerd Font
 font-size = 16
 
 mouse-hide-while-typing = true

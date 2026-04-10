@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,43 +79,8 @@ you-should-use
 
 source $ZSH/oh-my-zsh.sh
 
-# Spaceship 全部盛り設定
-SPACESHIP_PROMPT_ORDER=(
-  user          # ユーザー名
-  dir           # ディレクトリ
-  git           # Git
-  package       # パッケージバージョン
-  node          # Node.js
-  ruby          # Ruby
-  python        # Python
-  golang        # Go
-  rust          # Rust
-  php           # PHP
-  docker        # Docker
-  aws           # AWS
-  kubectl       # Kubernetes
-  terraform     # Terraform
-  exec_time     # 実行時間
-  jobs          # バックグラウンドジョブ
-  exit_code     # 終了コード
-  line_sep      # 改行
-  char          # プロンプト文字
-)
-
-# コマンド間の区切り線
-precmd() { print -rP "%F{240}${(l:$COLUMNS::·:):-}%f" }
-
-SPACESHIP_USER_COLOR="yellow"
-SPACESHIP_USER_PREFIX="💻 "
-SPACESHIP_USER_SUFFIX=" "
-SPACESHIP_DIR_COLOR="cyan"
-SPACESHIP_DIR_PREFIX="📁 "
-SPACESHIP_USER_SHOW=always
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_CHAR_SYMBOL="❯ "
-SPACESHIP_CHAR_SYMBOL_SUCCESS="❯ "
-SPACESHIP_CHAR_SYMBOL_FAILURE="❯ "
-SPACESHIP_EXEC_TIME_SHOW=true
+# Starship
+eval "$(starship init zsh)"
 
 # User configuration
 
@@ -158,3 +123,9 @@ eval "$(mise activate zsh)"
 eval "$(mise activate zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# fzf
+eval "$(fzf --zsh)"
+export FZF_CTRL_R_OPTS='--bind "ctrl-h:toggle-sort"'
+bindkey '^H' fzf-history-widget
+bindkey '^F' fzf-file-widget
