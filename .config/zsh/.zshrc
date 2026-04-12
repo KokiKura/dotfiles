@@ -80,6 +80,7 @@ you-should-use
 source $ZSH/oh-my-zsh.sh
 
 # Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 # User configuration
