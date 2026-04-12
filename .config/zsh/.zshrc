@@ -121,7 +121,6 @@ export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 eval "$(direnv hook zsh)"
 eval "$(mise activate zsh)"
-eval "$(mise activate zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
