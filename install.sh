@@ -10,7 +10,7 @@ CONFIG_DIR="$HOME/.config"
 echo "dotfiles: $DOTFILES_DIR"
 
 # ~/.config 内のシンボリックリンクを作成（ディレクトリ単位）
-CONFIG_DIRS=(ghostty nvim starship wezterm)
+CONFIG_DIRS=(claude ghostty nvim starship wezterm)
 
 for dir in "${CONFIG_DIRS[@]}"; do
   src="$DOTFILES_DIR/.config/$dir"
