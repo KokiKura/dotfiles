@@ -1,7 +1,7 @@
-theme = Snazzy
+theme = Sea Shells
 
-background-opacity = 0.85
-background-blur-radius = 15
+background-opacity = 0.80
+background-blur-radius = 20
 
 font-family = MesloLGS Nerd Font
 font-size = 16

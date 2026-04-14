@@ -1,5 +1,14 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-right_format = "$time"
+
+format = """
+[](fg:#313244)\
+[$directory](bold fg:#89dceb bg:#313244)\
+[ ](bg:#313244)\
+$git_branch\
+${custom.folder}\
+ $character"""
+
+right_format = "$status$time"
 
 [aws]
 symbol = " "
@@ -32,6 +41,10 @@ symbol = " "
 symbol = " "
 
 [directory]
+format = "[$path]($style)"
+style = "bold fg:#89dceb bg:#313244"
+truncation_length = 3
+truncation_symbol = "…/"
 read_only = " 󰌾"
 
 [docker_context]
@@ -57,7 +70,15 @@ disabled = true
 symbol = " "
 
 [git_branch]
+format = "[](fg:#313244 bg:#89b4fa)[ $symbol$branch ](bold fg:#ffffff bg:#89b4fa)[](fg:#89b4fa)"
+style = "bold fg:#ffffff bg:#89b4fa"
 symbol = " "
+
+[custom.folder]
+command = "echo '󰉋'"
+when = "! git rev-parse --git-dir > /dev/null 2>&1"
+format = "[](fg:#313244 bg:#89b4fa)[ $output ](bold fg:#ffffff bg:#89b4fa)[](fg:#89b4fa)"
+shell = ["zsh", "-c"]
 
 [git_commit]
 tag_symbol = '  '
@@ -194,8 +215,16 @@ symbol = "󱘗 "
 [scala]
 symbol = " "
 
+[character]
+success_symbol = "[❯](bold fg:#a6e3a1)"
+error_symbol = "[❯](bold fg:#f38ba8)"
+
 [status]
+disabled = false
+format = "[$symbol ]($style)"
+success_symbol = "✓"
 symbol = " "
+style = "bold fg:#a6e3a1"
 
 [swift]
 symbol = " "
@@ -209,5 +238,5 @@ symbol = " "
 [time]
 disabled = false
 format = "[ $time]($style)"
-time_format = "%H:%M"
-style = "bold blue"
+time_format = "%H:%M:%S"
+style = "bold fg:#cdd6f4"
