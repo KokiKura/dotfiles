@@ -126,6 +126,3 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # fzf
 eval "$(fzf --zsh)"
-export FZF_CTRL_R_OPTS='--bind "ctrl-h:toggle-sort"'
-bindkey '^H' fzf-history-widget
-bindkey '^F' fzf-file-widget
