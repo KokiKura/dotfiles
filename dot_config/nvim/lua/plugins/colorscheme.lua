@@ -1,8 +1,12 @@
 return {
-  "EdenEast/nightfox.nvim",
+  "craftzdog/solarized-osaka.nvim",
   lazy = false,
   priority = 1000,
-  config = function()
-    vim.cmd("colorscheme nightfox")
+  opts = {
+    transparent = true,
+  },
+  config = function(_, opts)
+    require("solarized-osaka").setup(opts)
+    vim.cmd("colorscheme solarized-osaka")
   end,
 }
