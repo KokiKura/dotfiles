@@ -223,8 +223,9 @@ error_symbol = "[❯](bold fg:#f38ba8)"
 disabled = false
 format = "[$symbol ]($style)"
 success_symbol = "✓"
-symbol = " "
-style = "bold fg:#a6e3a1"
+symbol = "✗"
+style = "bold fg:#f38ba8"
+success_style = "bold fg:#a6e3a1"
 
 [swift]
 symbol = " "
