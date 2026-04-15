@@ -1,11 +1,11 @@
-# 秘密鍵・認証情報
+# Secret keys and credentials
 .ssh/
 .gnupg/
 .netrc
 .aws/
 .gcloud/
 
-# 環境変数・シークレット
+# Environment variables and secrets
 .env
 .env.*
 *.secret
@@ -15,12 +15,12 @@
 *_ed25519
 *_ecdsa
 
-# ローカル固有の設定（他環境に持ち込まない）
+# Local-specific settings
 .zsh_history
 .bash_history
 .node_repl_history
 
-# ~/.claude 一時ファイル
+# claude
 dot_claude/cache/
 dot_claude/image-cache/
 dot_claude/sessions/
