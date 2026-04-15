@@ -19,3 +19,18 @@
 .zsh_history
 .bash_history
 .node_repl_history
+
+# ~/.claude 一時ファイル
+dot_claude/cache/
+dot_claude/image-cache/
+dot_claude/sessions/
+dot_claude/session-env/
+dot_claude/shell-snapshots/
+dot_claude/statsig/
+dot_claude/telemetry/
+dot_claude/todos/
+dot_claude/backups/
+dot_claude/plugins/
+dot_claude/file-history/
+dot_claude/history.jsonl
+dot_claude/projects/
