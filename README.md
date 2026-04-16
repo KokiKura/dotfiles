@@ -1,7 +1,21 @@
-# Setup
+## Setup
+
+### 1. Install chezmoi
+
+**curl**
 
 ```sh
-git clone <repository-url>
-cd dotfiles
-./install.sh
+sh -c "$(curl -fsLS get.chezmoi.io)"
+```
+
+**Homebrew**
+
+```sh
+brew install chezmoi
+```
+
+### 2. Apply dotfiles
+
+```sh
+chezmoi init --apply <repository-url>
 ```
