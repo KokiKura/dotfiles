@@ -16,9 +16,9 @@
 *_ecdsa
 
 # Local-specific settings
-.zsh_history
-.bash_history
-.node_repl_history
+dot_zsh_history
+dot_bash_history
+dot_node_repl_history
 
 # claude
 dot_claude/cache/
