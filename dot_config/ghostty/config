@@ -11,6 +11,7 @@ mouse-hide-while-typing = true
 window-decoration = true
 
 cursor-style-blink = false
+adjust-cursor-thickness = 3
 
 keybind = cmd+t=new_window
 keybind = cmd+n=new_tab
