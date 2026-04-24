@@ -1,3 +1,7 @@
+---
+paths: dotfiles/dot_*
+---
+
 # Dotfiles Management (chezmoi)
 
 Files managed by dotfiles (e.g., `~/.claude`, `~/.config`, files deployed by `chezmoi apply`) must not be edited directly at the root level. Always edit or create new files in the source directory `~/Repos/dotfiles/` first, then apply the changes.
