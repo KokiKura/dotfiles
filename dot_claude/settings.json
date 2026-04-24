@@ -16,7 +16,11 @@
       "Read",
       "Edit",
       "Write",
-      "WebFetch"
+      "WebFetch",
+      "Bash(terraform plan)",
+      "Bash(terraform validate)",
+      "Bash(terraform fmt)",
+      "Bash(terraform show)"
     ],
     "deny": [
       "Bash(git push:*)",
@@ -46,6 +50,8 @@
       "Bash(npm uninstall:*)",
       "Bash(npm remove:*)",
       "Bash(just apply:*)",
+      "Bash(terraform apply)",
+      "Bash(terraform destroy)",
       "Read(.env)",
       "Read(.env.*)",
       "Read(.envrc)",
@@ -77,7 +83,8 @@
       "Bash(aws lambda create-function:*)",
       "Bash(aws lambda update-function-code:*)",
       "Bash(aws cloudformation create-stack:*)",
-      "Bash(aws cloudformation update-stack:*)"
+      "Bash(aws cloudformation update-stack:*)",
+      "Bash(terraform init)"
     ]
   },
   "hooks": {
