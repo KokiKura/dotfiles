@@ -13,17 +13,6 @@ type: feedback
 - Keep comments concise and focus on WHY, not WHAT
 - **Function docstrings must describe WHAT the function does** — Write in concise, present-tense English (e.g., "Load quiz questions", not "Loading..." or "Loads...")
 
-Example:
-```python
-# Good - describes the action clearly
-def check_answer(question_id: int, answer: int) -> bool:
-    """Verify if the answer matches the correct response."""
-
-# Bad - too vague or verbose
-def check_answer(question_id: int, answer: int) -> bool:
-    """Check something with the question and answer."""
-```
-
 ## Naming Conventions
 - **Variables & Functions**: `snake_case` (lowercase with underscores)
 - **Classes**: `PascalCase` (capitalize each word)
