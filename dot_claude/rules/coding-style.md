@@ -11,7 +11,16 @@ type: feedback
 - Use single-line comments for explanations
 - Use docstrings for modules, classes, and functions (one-line format preferred)
 - Keep comments concise and focus on WHY, not WHAT
-- **Function docstrings must describe WHAT the function does** — Write in concise, present-tense English (e.g., "Load quiz questions", not "Loading..." or "Loads...")
+- **Function docstrings must describe WHAT the function does** — Write in concise, present-tense English, starting with an action verb
+  - Begin with a verb that describes the action: "Load", "Parse", "Filter", "Validate", "Return", etc.
+  - Be specific about what is processed and what is returned
+  - One-line format: use imperative mood (e.g., "Load quiz questions" not "Loading..." or "Loads...")
+  - Examples:
+    - ✓ "Load and parse quiz questions from JSON file"
+    - ✓ "Filter questions by difficulty level and return sorted list"
+    - ✓ "Validate user input and raise ValueError if invalid"
+    - ✗ "Quiz question loading utility" (too vague, not action-oriented)
+    - ✗ "Load questions" (too brief, doesn't explain what happens with them)
 
 ## Naming Conventions
 - **Variables & Functions**: `snake_case` (lowercase with underscores)
