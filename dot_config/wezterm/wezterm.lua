@@ -5,11 +5,18 @@ config.automatically_reload_config = true
 config.font = wezterm.font_with_fallback({
   "Hack Nerd Font",
   "BlexMono Nerd Font",
+  { family = "Hiragino Sans", weight = "Regular" },
 })
 config.font_size = 16.0
+-- Match CJK glyph cell width with Hack Nerd Font's metrics for stable rendering
+config.cell_width = 1.0
+config.warn_about_missing_glyphs = false
 config.use_ime = true
 config.window_background_opacity = 0.7
 config.macos_window_background_blur = 20
+
+-- Auto-launch zellij on startup (attach to existing session if present)
+config.default_prog = { "/bin/zsh", "-l", "-c", "zellij attach -c main" }
 
 ----------------------------------------------------
 -- Tab
