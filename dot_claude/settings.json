@@ -23,8 +23,6 @@
       "Bash(terraform show)"
     ],
     "deny": [
-      "Bash(git push:*)",
-      "Bash(rm -rf:*)",
       "Bash(sudo:*)",
       "Bash(curl:*)",
       "Bash(wget:*)",
@@ -84,7 +82,11 @@
       "Bash(aws lambda update-function-code:*)",
       "Bash(aws cloudformation create-stack:*)",
       "Bash(aws cloudformation update-stack:*)",
-      "Bash(terraform init)"
+      "Bash(terraform init)",
+      "Bash(git push:*)",
+      "Bash(rm -rf:*)",
+      "Bash(rm:*)",
+      "Bash(rmdir:*)"
     ]
   },
   "hooks": {
