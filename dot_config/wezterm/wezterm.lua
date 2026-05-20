@@ -15,9 +15,6 @@ config.use_ime = true
 config.window_background_opacity = 0.7
 config.macos_window_background_blur = 20
 
--- Auto-launch zellij on startup (attach to existing session if present)
-config.default_prog = { "/bin/zsh", "-l", "-c", "zellij attach -c main" }
-
 ----------------------------------------------------
 -- Tab
 ----------------------------------------------------
