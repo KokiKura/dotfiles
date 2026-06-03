@@ -105,6 +105,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# gomi — safe rm replacement (TUI restore via `gomi -b`)
+# Use `\rm` or `command rm` to bypass and force real deletion.
+if command -v gomi >/dev/null 2>&1; then
+  alias rm='gomi'
+  alias trash='gomi'
+  alias trash-list='gomi -b'   # open interactive restore browser
+fi
+
 export PATH="$(brew --prefix mysql@8.0)/bin:$PATH"
 export LDFLAGS="-L$(brew --prefix mysql@8.0)/lib"
 export CPPFLAGS="-I$(brew --prefix mysql@8.0)/include"

@@ -1,0 +1,61 @@
+core:
+  trash:
+    strategy: auto
+    gomi_dir: ~/.gomi
+    home_fallback: true
+    forbidden_paths:
+      - /
+      - /Users
+      - ~
+      - ~/Repos
+      - ~/.config
+      - ~/.ssh
+      - ~/.gnupg
+
+  restore:
+    confirm: true
+    verbose: true
+
+  permanent_delete:
+    enable: false
+
+ui:
+  density: spacious
+  exit_message: ""
+
+  preview:
+    syntax_highlight: true
+    colorscheme: nord
+    directory_command: ls -GF -A
+
+  style:
+    list_view:
+      indent_on_select: true
+      cursor: "#AD58B4"
+      selected: "#5FB458"
+      filter_match: "#F39C12"
+      filter_prompt: "#7AA2F7"
+
+history:
+  include:
+    within_days: 30
+  exclude:
+    files:
+      - .DS_Store
+      - .localized
+    globs:
+      - "._*"
+      - "*.swp"
+      - "*.swo"
+      - "*~"
+    patterns:
+      - "^\\.Trashes$"
+    size:
+      max: 10GB
+
+logging:
+  enabled: false
+  level: info
+  rotation:
+    max_size: 10MB
+    max_files: 3
