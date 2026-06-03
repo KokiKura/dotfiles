@@ -7,9 +7,6 @@
     "pr": ""
   },
   "includeCoAuthoredBy": false,
-  "language": "ja",
-  "model": "opus[1m]",
-  "effortLevel": "high",
   "permissions": {
     "allow": [
       "Bash",
@@ -89,6 +86,7 @@
       "Bash(rmdir:*)"
     ]
   },
+  "model": "opus[1m]",
   "hooks": {
     "PostToolUse": [
       {
@@ -101,5 +99,8 @@
         ]
       }
     ]
-  }
+  },
+  "language": "ja",
+  "effortLevel": "high",
+  "theme": "dark-daltonized"
 }

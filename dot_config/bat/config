@@ -1,0 +1,28 @@
+# bat configuration
+# See: https://github.com/sharkdp/bat#configuration-file
+# Each line is a CLI flag. Lines starting with `#` are comments.
+
+# --- Theme -------------------------------------------------------------------
+# List available themes with: `bat --list-themes`
+--theme="OneHalfDark"
+
+# --- Layout ------------------------------------------------------------------
+# Available components: full / auto / plain / changes / header /
+# header-filename / header-filesize / grid / rule / numbers / snip / default
+--style="numbers,changes,header-filename"
+
+# --- Text rendering ----------------------------------------------------------
+--italic-text=always
+--tabs=2
+--wrap=auto
+
+# --- Pager -------------------------------------------------------------------
+# `auto` pipes through $PAGER only when output is long.
+--paging=auto
+
+# --- Syntax mapping ----------------------------------------------------------
+# Map file patterns to specific syntaxes.
+--map-syntax "*.ignore:Git Ignore"
+--map-syntax ".env*:DotENV"
+--map-syntax "Brewfile:Ruby"
+--map-syntax "*.conf:INI"
