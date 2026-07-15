@@ -7,6 +7,10 @@
     "pr": ""
   },
   "includeCoAuthoredBy": false,
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/scripts/statusline.sh\""
+  },
   "permissions": {
     "allow": [
       "Bash",
