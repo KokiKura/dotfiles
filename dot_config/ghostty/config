@@ -4,6 +4,7 @@ background-opacity = 0.80
 background-blur-radius = 20
 
 font-family = MesloLGS Nerd Font
+font-family = HackGen Console NF
 font-size = 16
 
 mouse-hide-while-typing = true
