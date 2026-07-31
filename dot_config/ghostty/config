@@ -1,15 +1,45 @@
-theme = Night Owl
+# Matched to WezTerm's look — see dot_config/wezterm/wezterm.lua
 
-background-opacity = 0.80
-background-blur-radius = 20
+# WezTerm's built-in default color scheme (no color_scheme is set there)
+background = #000000
+foreground = #e0e0e0
+cursor-color = #52ad70
+selection-background = #fffacd
+selection-foreground = #000000
 
-font-family = MesloLGS Nerd Font
-font-family = BIZ UDGothic
+palette = 0=#000000
+palette = 1=#cc5555
+palette = 2=#55cc55
+palette = 3=#cdcd55
+palette = 4=#5555cc
+palette = 5=#cc55cc
+palette = 6=#7acaca
+palette = 7=#cccccc
+palette = 8=#555555
+palette = 9=#ff5555
+palette = 10=#55ff55
+palette = 11=#ffff55
+palette = 12=#5555ff
+palette = 13=#ff55ff
+palette = 14=#55ffff
+palette = 15=#ffffff
+
+background-opacity = 0.7
+background-blur = 20
+
+font-family = Hack Nerd Font Mono
+font-family = BlexMono Nerd Font Mono
+font-family = Hiragino Sans
 font-size = 16
 
 mouse-hide-while-typing = true
 
+# WezTerm uses window_decorations = "RESIZE": resizable, no title bar
 window-decoration = true
+macos-titlebar-style = hidden
+
+# WezTerm keeps the tab bar visible even with a single tab
+window-show-tab-bar = always
 
 cursor-style-blink = false
 adjust-cursor-thickness = 3
