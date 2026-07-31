@@ -32,6 +32,10 @@ font-family = BlexMono Nerd Font Mono
 font-family = Hiragino Sans
 font-size = 16
 
+# Compensate for thin-looking glyphs on a dark background
+font-thicken = true
+alpha-blending = linear-corrected
+
 mouse-hide-while-typing = true
 
 # WezTerm uses window_decorations = "RESIZE": resizable, no title bar
