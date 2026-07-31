@@ -27,7 +27,7 @@ format = '[@](fg:#7f849c)[$hostname]($style)'
 
 [directory]
 style = "fg:#74c7ec"
-format = '[ · ](fg:#6c7086)[$path]($style)'
+format = '[  ](fg:#6c7086)[$path]($style)'
 truncation_length = 3
 truncation_symbol = "/.../"
 truncate_to_repo = false
@@ -40,7 +40,7 @@ truncate_to_repo = false
 
 [git_branch]
 symbol = ""
-format = '[ · ](fg:#6c7086)[git](fg:#6c7086) [$branch](fg:#cba6f7)'
+format = '[ $symbol ](fg:#6c7086)[$branch](fg:#cba6f7)'
 
 [git_status]
 style = "fg:#f38ba8"
