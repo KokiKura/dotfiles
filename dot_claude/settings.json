@@ -60,11 +60,9 @@
       "Read(./secrets/**)",
       "Read(**/credentials.json)",
       "Read(**/*token*)",
-      "Edit(.env)",
-      "Edit(.env.*)",
       "Edit(~/.ssh/**)",
       "Edit(~/.aws/**)",
-      "Write(.env*)"
+      "Edit(.env*)"
     ],
     "ask": [
       "Bash(git rebase:*)",
